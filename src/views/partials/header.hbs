@@ -1,3 +1,13 @@
 <header>
-    <nav>mi sitio</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">Mi sitio</a>
+
+            <div class="navbar-nav">
+                <a href="/" class="nav-link {{#if isHome}}active{{/if}}">Home</a>
+                <a href="about" class="nav-link {{#if isAbout}}active{{/if}}">About</a>
+                <a href="contact" class="nav-link {{#if isContact}}active{{/if}}">Contact</a>
+            </div>
+        </div>
+    </nav>
 </header>

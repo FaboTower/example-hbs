@@ -1,4 +1,13 @@
-    <div>
-        <h1>{{titulo}}</h1>
-        <p>{{mensaje}}</p>
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h1 class="h3">{{titulo}}</h1>
+        <p class="mb-0">{{mensaje}}</p>
+
+        <h2 class="h6 mt-4">Links</h2>
+        <ul class="mb-0">
+            {{#each links}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
     </div>
+</div>
